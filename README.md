@@ -20,7 +20,10 @@ Project consists of creating an Active Directory environment utilizing Oracle Vi
 
 <p align="center">
 The goal of this project is to create a networking environment in VirtualBox that has the properties displayed in the image below. The creation of two virtual machines will be observed, the first of which will act as our domain controller (initialized as DC). This domain controller will be given two Network Adapters, one of which will connect to the internet and the other will be used for the internal network. The second virtual machine, which will be used to represent the client, will also connect to the internal network. After our DC is created, we will install Windows Server 2019 and assign IP Adressing for the internal network. The external IP Adressing will take place automatically because it will be assigned by our home router, or whichever router we are connected to at the time. We will then install Active Directory and create a domain and configure Network Address Translation so that clients will be able to connect to the internet. We will utilize PowerShell to create about 1,000 sample user accounts in our Active Directory environment. The second virtual machine will be installed with Windows 10. We will connect this machine to the domain and we will log into it using one of the generated domain accounts.  : <br/>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Picture1](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/fc8d2896-7cde-439c-8b5e-dfb6e501f213)
+
+ 
+ <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
