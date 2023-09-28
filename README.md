@@ -39,7 +39,8 @@ The next task is renaming the PC. This can be done through System Settings under
 <br />
 <br />
 Our next step is to install Active Directory and create a domain. In order to do this we can navigate to the Add Roles and Features wizard and select Active Directory Domain Services. After we click add features a checkmark should appear next to the highlighted text in the image below. After this is installed we need to configure our post-installation settings. To do this we navigate to the notifications bar in the Server Manager and click the blue text "promote this server to a domain controller" which will open the Active Directory Domain Services Configuration Wizard. We then select "Add New Forest" and choose a domain name. After installation is complete the PC will restart.   <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![VirtualBox_DC_27_09_2023_13_16_45](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/1057b062-cb54-4fd3-a333-0f2523b06202)
 <br />
 <br />
 We will now create our own dedicated domain admin account by navigating to Windows Administrative Tools and selecting the Active Directory Users and Computers option. Within the window we can right click on the domain we created in order to create a new organizational unit to put our domain admin account in. Once the organizational unit is created we right click on the unit to create a new user (our admin account). After the account is created it will show on the right side of the window. We then right click it and select properties in order to change it to an admin account by making it a MemberOf the previous admin group we created. If we log out of our current account we should now be able to log back in using our domain admin credentials that we just created.  <br/>
