@@ -75,6 +75,8 @@ We are now going to create users in the Active Directory environment using the f
 
 ![VirtualBox_DC_27_09_2023_17_05_02](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/0c303461-d87a-4853-9a9c-47a04a28d5dc)
 
+![VirtualBox_DC_27_09_2023_17_05_59](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/d6096b6e-a6d4-4fa2-a3ad-53bd751bc291)
+
 <br/>
 
 <br />
