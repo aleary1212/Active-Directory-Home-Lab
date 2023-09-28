@@ -84,6 +84,8 @@ The final step of this project is to create our client PC and implement Windows 
 
 ![VirtualBox_Client1_27_09_2023_17_19_44](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/86562cea-3d90-43b5-860d-7abfaf60a113)
 
+![VirtualBox_Client1_27_09_2023_17_42_42](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/80a6b70a-c095-4b0e-ae01-6b1c2cd43669)
+
 <br/>
 </p>
 
