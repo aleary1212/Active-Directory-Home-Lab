@@ -57,7 +57,9 @@ We will now create our own dedicated domain admin account by navigating to Windo
 <br />
 <br />
 After we are logged into our admin account we are going to implement Remote Access Server and Network Address Translation on our Domain Controller. This will allow our client PC to be located on the internal network while still being able to acess the internet through our Domain Controller. To accomplish this we will go to Add Roles and Features within the Server Manager and select Remote Access and Routing. After it is installed we can go to the tools menu in the Server Manager and select Routing and Remote Access. Right click the DC (local) and select Configure and Enable Routing and Remote Access in orderr to install NAT. Then select our proper internet-facing Network Interface when prompted.     <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![VirtualBox_DC_27_09_2023_16_07_38](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/58e2cefe-99f2-4319-8335-cab6394caf57)
+
 <br />
 <br />
 Our next step is to set up a DHCP server on our Domain Controller which will set up IP Adresses and other DHCP information on our client PC. We again select Add Roles and Features within the Server Manager but this time we select DHCP. After it is installed we now need to configure DHCP options to the ones specified in our diagram. Go to Tools and select DHCP. Right click on IPv4 and select New Scope. Configure the options with the scope information provided in the diagram.     <br/>
