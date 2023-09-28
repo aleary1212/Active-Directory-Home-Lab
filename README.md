@@ -33,7 +33,9 @@ After we download VirtualBox and create the first virtual machine, it is time to
 <br />
 <br />
 The next task is renaming the PC. This can be done through System Settings under the section About Your PC. <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![VirtualBox_DC_27_09_2023_13_00_28](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/7b863731-860b-41fa-a89c-7356f5aa0de0)
+
 <br />
 <br />
 Our next step is to install Active Directory and create a domain. In order to do this we can navigate to the Add Roles and Features wizard and select Active Directory Domain Services. After we click add features a checkmark should appear next to the highlighted text in the image below. After this is installed we need to configure our post-installation settings. To do this we navigate to the notifications bar in the Server Manager and click the blue text "promote this server to a domain controller" which will open the Active Directory Domain Services Configuration Wizard. We then select "Add New Forest" and choose a domain name. After installation is complete the PC will restart.   <br/>
