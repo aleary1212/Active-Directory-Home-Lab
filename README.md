@@ -50,6 +50,8 @@ We will now create our own dedicated domain admin account by navigating to Windo
 
 ![VirtualBox_DC_27_09_2023_15_34_19](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/3d7075e8-6440-49ec-bbc4-5e45fd21a5d5)
 
+![VirtualBox_DC_27_09_2023_15_35_43](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/51922eea-e43a-407f-8a85-3448c2611b4a)
+
 <br />
 <br />
 After we are logged into our admin account we are going to implement Remote Access Server and Network Address Translation on our Domain Controller. This will allow our client PC to be located on the internal network while still being able to acess the internet through our Domain Controller. To accomplish this we will go to Add Roles and Features within the Server Manager and select Remote Access and Routing. After it is installed we can go to the tools menu in the Server Manager and select Routing and Remote Access. Right click the DC (local) and select Configure and Enable Routing and Remote Access in orderr to install NAT. Then select our proper internet-facing Network Interface when prompted.     <br/>
