@@ -81,6 +81,9 @@ We are now going to create users in the Active Directory environment using the f
 
 <br />
 The final step of this project is to create our client PC and implement Windows 10 in VirtualBox. When provisioning this virtual machine in VirtualBox be sure to select Internal Network in Network Settings instead of the default NAT. When installing Windows 10, select the Windows 10 Pro option instead of the default Windows Home. After Windows is installed the first thing we want to do is make sure the internet is working by going to the command line and entering ipconfig to see our configuration. Next we should ping google.com to verify that we can connect to the internet. With that, our entire diagram is set up and working. We can also add this client PC to our domain by navigating to Rename this PC (advanced) in Settings and inputting mydomain.com as the MemberOf value.
+
+![VirtualBox_Client1_27_09_2023_17_19_44](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/86562cea-3d90-43b5-860d-7abfaf60a113)
+
 <br/>
 </p>
 
