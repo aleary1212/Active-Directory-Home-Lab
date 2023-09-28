@@ -27,7 +27,9 @@ The goal of this project is to create a networking environment in VirtualBox tha
 <br />
 <br />
 After we download VirtualBox and create the first virtual machine, it is time to set up our IP Addressing for our internal network. The NIC facing the internet will be automatically supplied with DHCP information from our home router. By navigating to our ethernet settings page we can change our adapter settings. There should be two network connections displayed based on how we configured the virtual machine in VirtualBox before launching it. You can open the status bar for each connection to determine whether it is the internet facing NIC or the internal network NIC and rename them accordingly. Under our internal network, we can click properties and adjust out IPv4 address to match the one set out in the diagram, which is 172.16.0.1:   <br/>
-<img src="https://i.imgur.com/tc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![VirtualBox_DC_27_09_2023_12_50_35](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/5e6cc0c4-71d6-4d8b-9c72-14a774ac4326)
+
 <br />
 <br />
 The next task is renaming the PC. This can be done through System Settings under the section About Your PC. <br/>
