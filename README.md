@@ -18,7 +18,7 @@ Project consists of creating an Active Directory environment utilizing Oracle Vi
 
 <h2>Program walk-through:</h2>
 
-<p align="center">
+<p align="left">
 The goal of this project is to create a networking environment in VirtualBox that has the properties displayed in the image below. The creation of two virtual machines will be observed, the first of which will act as our domain controller (initialized as DC). This domain controller will be given two Network Adapters, one of which will connect to the internet and the other will be used for the internal network. The second virtual machine, which will be used to represent the client, will also connect to the internal network. After our DC is created, we will install Windows Server 2019 and assign IP Adressing for the internal network. The external IP Adressing will take place automatically because it will be assigned by our home router, or whichever router we are connected to at the time. We will then install Active Directory and create a domain and configure Network Address Translation so that clients will be able to connect to the internet. We will utilize PowerShell to create about 1,000 sample user accounts in our Active Directory environment. The second virtual machine will be installed with Windows 10. We will connect this machine to the domain and we will log into it using one of the generated domain accounts.  : <br/>
  
 ![Picture2](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/dd676e83-b80d-4afc-825d-637b01c6ddeb)
@@ -47,7 +47,9 @@ Our next step is to install Active Directory and create a domain. In order to do
 <br />
 <br />
 We will now create our own dedicated domain admin account by navigating to Windows Administrative Tools and selecting the Active Directory Users and Computers option. Within the window we can right click on the domain we created in order to create a new organizational unit to put our domain admin account in. Once the organizational unit is created we right click on the unit to create a new user (our admin account). After the account is created it will show on the right side of the window. We then right click it and select properties in order to change it to an admin account by making it a MemberOf the previous admin group we created. If we log out of our current account we should now be able to log back in using our domain admin credentials that we just created.  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![VirtualBox_DC_27_09_2023_15_34_19](https://github.com/aleary1212/Active-Directory-Home-Lab/assets/67345075/3d7075e8-6440-49ec-bbc4-5e45fd21a5d5)
+
 <br />
 <br />
 After we are logged into our admin account we are going to implement Remote Access Server and Network Address Translation on our Domain Controller. This will allow our client PC to be located on the internal network while still being able to acess the internet through our Domain Controller. To accomplish this we will go to Add Roles and Features within the Server Manager and select Remote Access and Routing. After it is installed we can go to the tools menu in the Server Manager and select Routing and Remote Access. Right click the DC (local) and select Configure and Enable Routing and Remote Access in orderr to install NAT. Then select our proper internet-facing Network Interface when prompted.     <br/>
